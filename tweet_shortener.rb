@@ -19,7 +19,6 @@ def word_substituter(tweet)
   tweet_arr = tweet.split(' ')
   tweet_arr.each_with_index do |word, i|
     if dict.keys.to_s.include? word.downcase
-      binding.pry
       tweet_arr[i] = dict[word.downcase.to_sym]
     end
   end
